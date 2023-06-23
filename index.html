@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Belanosima">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAXEEM - THE CITY JUNE 30TH</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .banner {
+      background: url('images/ripped.png') center center no-repeat;
+      background-size: cover;
+      height: 675px;
+      filter: drop-shadow(0px 8px 35px rgba(0, 0, 0, 0.3));
+    }
+
+    body {
+      background: #E0EAFC;
+      font-family: 'Belanosima', serif;
+      font-size: 48;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .album-cover {
+      height: 600px;
+      width: 600px;
+    }
+
+    .spinning-image {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: spin 5s infinite linear;
+    }
+
+    .city-image {
+      position: relative;
+      top: -200px;
+      filter: drop-shadow(0px 8px 35px rgba(0, 0, 0, 0.3));
+      box-shadow: 0 0 55px rgba(153, 190, 242, 0.623);
+    }
+
+    .text-9xl {
+      position: relative;
+      text-shadow: 0 0 25px rgba(156, 235, 255, 0.623);
+    }
+
+
+    p {
+      z-index: 999;      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      font-size: 35px;
+      color: white;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.623);
+      position: relative;
+      top: -200px;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="background">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+ </ul>
+  <div class="banner relative">
+    <div class="overlay absolute inset-0 flex items-center justify-center">
+      <a href="https://instagram.com/1maxeem" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-instagram text-white text-6xl mr-4"></i>
+      </a>
+      <h1 class="text-9xl text-white relative z-10">maxeem</h1>
+      <a href="https://twitter.com/1maxeem" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-twitter text-white text-6xl ml-4"></i>
+      </a>
+      <img src="images/maxim.png" style="height: 300px;" alt="Spinning Image" class="spinning-image">
+      
+    </div>
+  </div>
+  <p>the city. out june 30th.</p>
+  <div class="container mx-auto mt-8">
+    <div class="flex justify-center">
+      <a href="https://distrokid.com/hyperfollow/maxeem1/the-city" target="_blank" rel="noopener noreferrer">
+        <img src="images/city.png" alt="Album Cover" class="album-cover city-image">
+      </a>
+    </div>
+  </div>
+  
+</body>
+
+</html>
